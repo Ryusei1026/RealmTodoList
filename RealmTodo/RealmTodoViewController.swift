@@ -41,12 +41,8 @@ class RealmTodoViewController: UIViewController {
     }
     
     func addTodoItem(title: String) {
-        do {
-            try? realm.write {
-                realm.add(TodoItem(value: ["title": title]))
-            }
-        } catch (let e){
-            print(e)
+        try! realm.write {
+            realm.add(TodoItem(value: ["title": title]))
         }
     }
     
@@ -63,6 +59,11 @@ class RealmTodoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        realm = try! Realm()
+        todoList = realm.objects(TodoItem.self)
+        token = todoList.observe { [weak self] _ in
+            self?.reload()
+        }
     }
 }
 
