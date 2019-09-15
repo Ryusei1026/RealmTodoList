@@ -3,25 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1B9BA803232E661100BA80B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9BA802232E661100BA80B1 /* AppDelegate.swift */; };
-		1B9BA805232E661100BA80B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9BA804232E661100BA80B1 /* ViewController.swift */; };
-		1B9BA808232E661100BA80B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA806232E661100BA80B1 /* Main.storyboard */; };
+		1B9BA805232E661100BA80B1 /* RealmTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9BA804232E661100BA80B1 /* RealmTodoViewController.swift */; };
 		1B9BA80A232E661300BA80B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA809232E661300BA80B1 /* Assets.xcassets */; };
 		1B9BA80D232E661300BA80B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA80B232E661300BA80B1 /* LaunchScreen.storyboard */; };
+		1B9BA815232E6AC600BA80B1 /* RealmTodoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B9BA814232E6AC600BA80B1 /* RealmTodoViewController.xib */; };
+		1B9BA817232E6C7200BA80B1 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9BA816232E6C7200BA80B1 /* TodoItem.swift */; };
+		BD4E17A24492C0EAC789B35F /* Pods_RealmTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26082B92EDAEF5D05E9196AB /* Pods_RealmTodo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11957CCD829A78750FABE435 /* Pods-RealmTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTodo.release.xcconfig"; path = "Target Support Files/Pods-RealmTodo/Pods-RealmTodo.release.xcconfig"; sourceTree = "<group>"; };
 		1B9BA7FF232E661100BA80B1 /* RealmTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9BA802232E661100BA80B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B9BA804232E661100BA80B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1B9BA807232E661100BA80B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B9BA804232E661100BA80B1 /* RealmTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTodoViewController.swift; sourceTree = "<group>"; };
 		1B9BA809232E661300BA80B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B9BA80C232E661300BA80B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B9BA80E232E661300BA80B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B9BA814232E6AC600BA80B1 /* RealmTodoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealmTodoViewController.xib; sourceTree = "<group>"; };
+		1B9BA816232E6C7200BA80B1 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		26082B92EDAEF5D05E9196AB /* Pods_RealmTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65CC8D15660451CC36D1DBC /* Pods-RealmTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTodo.debug.xcconfig"; path = "Target Support Files/Pods-RealmTodo/Pods-RealmTodo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD4E17A24492C0EAC789B35F /* Pods_RealmTodo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				1B9BA801232E661100BA80B1 /* RealmTodo */,
 				1B9BA800232E661100BA80B1 /* Products */,
+				DFD782C54485B4F55FCA5AD2 /* Pods */,
+				5FFF785648E45E9828B865E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +64,31 @@
 			isa = PBXGroup;
 			children = (
 				1B9BA802232E661100BA80B1 /* AppDelegate.swift */,
-				1B9BA804232E661100BA80B1 /* ViewController.swift */,
-				1B9BA806232E661100BA80B1 /* Main.storyboard */,
+				1B9BA816232E6C7200BA80B1 /* TodoItem.swift */,
+				1B9BA804232E661100BA80B1 /* RealmTodoViewController.swift */,
+				1B9BA814232E6AC600BA80B1 /* RealmTodoViewController.xib */,
 				1B9BA809232E661300BA80B1 /* Assets.xcassets */,
 				1B9BA80B232E661300BA80B1 /* LaunchScreen.storyboard */,
 				1B9BA80E232E661300BA80B1 /* Info.plist */,
 			);
 			path = RealmTodo;
+			sourceTree = "<group>";
+		};
+		5FFF785648E45E9828B865E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26082B92EDAEF5D05E9196AB /* Pods_RealmTodo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFD782C54485B4F55FCA5AD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F65CC8D15660451CC36D1DBC /* Pods-RealmTodo.debug.xcconfig */,
+				11957CCD829A78750FABE435 /* Pods-RealmTodo.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B9BA811232E661300BA80B1 /* Build configuration list for PBXNativeTarget "RealmTodo" */;
 			buildPhases = (
+				BDF5D45F3463356269B22AA7 /* [CP] Check Pods Manifest.lock */,
 				1B9BA7FB232E661100BA80B1 /* Sources */,
 				1B9BA7FC232E661100BA80B1 /* Frameworks */,
 				1B9BA7FD232E661100BA80B1 /* Resources */,
+				10037861DF648CC2236F9017 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,20 +151,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9BA815232E6AC600BA80B1 /* RealmTodoViewController.xib in Resources */,
 				1B9BA80D232E661300BA80B1 /* LaunchScreen.storyboard in Resources */,
 				1B9BA80A232E661300BA80B1 /* Assets.xcassets in Resources */,
-				1B9BA808232E661100BA80B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10037861DF648CC2236F9017 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmTodo/Pods-RealmTodo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmTodo/Pods-RealmTodo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealmTodo/Pods-RealmTodo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDF5D45F3463356269B22AA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealmTodo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B9BA7FB232E661100BA80B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B9BA805232E661100BA80B1 /* ViewController.swift in Sources */,
+				1B9BA805232E661100BA80B1 /* RealmTodoViewController.swift in Sources */,
+				1B9BA817232E6C7200BA80B1 /* TodoItem.swift in Sources */,
 				1B9BA803232E661100BA80B1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +215,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1B9BA806232E661100BA80B1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B9BA807232E661100BA80B1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1B9BA80B232E661300BA80B1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,6 +344,7 @@
 		};
 		1B9BA812232E661300BA80B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F65CC8D15660451CC36D1DBC /* Pods-RealmTodo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +363,7 @@
 		};
 		1B9BA813232E661300BA80B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11957CCD829A78750FABE435 /* Pods-RealmTodo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
